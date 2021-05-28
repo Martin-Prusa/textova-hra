@@ -1,11 +1,13 @@
 package cz.martin.gui;
 
+import cz.martin.logic.Logic;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
 
 public class Controller {
+    private Logic logic;
 
     @FXML
     private Text title;
@@ -39,7 +41,7 @@ public class Controller {
 
     @FXML
     public void initialize() {
-
+        this.logic = new Logic();
     }
 
 }

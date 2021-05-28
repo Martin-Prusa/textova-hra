@@ -19,9 +19,9 @@
       </FlowPane>
       <FlowPane alignment="CENTER" hgap="30.0" layoutX="105.0" layoutY="334.0" prefHeight="78.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Button fx:id="button1" mnemonicParsing="false" onAction="#btn1click" prefWidth="120.0" style="-fx-background-color: #52340b;" text="Button" textFill="WHITE" />
-            <Button fx:id="button2" mnemonicParsing="false" onAction="#btn2click" prefWidth="120.0" style="-fx-background-color: #52340b;" text="Button" textFill="WHITE" />
-            <Button fx:id="button3" mnemonicParsing="false" onAction="#btn3click" prefWidth="120.0" style="-fx-background-color: #52340b;" text="Button" textFill="WHITE" />
+            <Button fx:id="button1" mnemonicParsing="false" onAction="#btn1click" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #52340b;" text="Button" textFill="WHITE" />
+            <Button fx:id="button2" mnemonicParsing="false" onAction="#btn2click" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #52340b;" text="Button" textFill="WHITE" />
+            <Button fx:id="button3" mnemonicParsing="false" onAction="#btn3click" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #52340b;" text="Button" textFill="WHITE" />
          </children>
       </FlowPane>
       <FlowPane alignment="CENTER" layoutY="78.0" prefHeight="440.0" prefWidth="900.0">
