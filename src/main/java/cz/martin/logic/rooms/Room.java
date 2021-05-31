@@ -16,7 +16,7 @@ public class Room {
     }
 
     public Room choose1() {
-        return new Room("a", "b", "c", "d", "e");
+        return new Room("x", "x", "x", "x", "x");
     }
 
     public Room choose2() {
@@ -24,7 +24,7 @@ public class Room {
     }
 
     public Room choose3() {
-        return new Room("a", "b");
+        return new Room("a", "b", "c", "d", "e");
     }
 
     public String getName() {

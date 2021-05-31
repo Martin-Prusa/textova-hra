@@ -26,22 +26,34 @@ public class Controller {
 
     @FXML
     public void btn1click(ActionEvent event) {
-
+        this.logic.setActualRoom(this.logic.getActualRoom().choose1());
+        redraw();
     }
 
     @FXML
     public void btn2click(ActionEvent event) {
-
+        this.logic.setActualRoom(this.logic.getActualRoom().choose2());
+        redraw();
     }
 
     @FXML
     public void btn3click(ActionEvent event) {
-
+        this.logic.setActualRoom(this.logic.getActualRoom().choose3());
+        redraw();
     }
 
     @FXML
     public void initialize() {
         this.logic = new Logic();
+        redraw();
+    }
+
+    public void redraw() {
+        this.title.setText(this.logic.getActualRoom().getName());
+        this.text.setText(this.logic.getActualRoom().getText());
+        this.button1.setText(this.logic.getActualRoom().getButtonText1());
+        this.button2.setText(this.logic.getActualRoom().getButtonText2());
+        this.button3.setText(this.logic.getActualRoom().getButtonText3());
     }
 
 }
