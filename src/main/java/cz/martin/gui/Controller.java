@@ -67,7 +67,7 @@ public class Controller {
             button3.setDisable(false);
         }
 
-        Image image = new Image(getClass().getResource("/img/"+this.logic.getActualRoom().getImg()).toString());
+        Image image = new Image(this.logic.getActualRoom().getImg());
         img.setImage(image);
     }
 

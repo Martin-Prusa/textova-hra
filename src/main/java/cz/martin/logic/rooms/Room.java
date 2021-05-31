@@ -70,7 +70,7 @@ public class Room {
     }
 
     public String getImg() {
-        return img;
+        return getClass().getResource("/img/"+img).toString();
     }
 
     public void setImg(String img) {
