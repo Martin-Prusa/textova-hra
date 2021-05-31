@@ -4,6 +4,8 @@ import cz.martin.logic.Logic;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 
 public class Controller {
@@ -23,6 +25,9 @@ public class Controller {
 
     @FXML
     private Text text;
+
+    @FXML
+    private ImageView img;
 
     @FXML
     public void btn1click(ActionEvent event) {
@@ -61,6 +66,9 @@ public class Controller {
             button2.setDisable(false);
             button3.setDisable(false);
         }
+
+        Image image = new Image(getClass().getResource("/img/"+this.logic.getActualRoom().getImg()).toString());
+        img.setImage(image);
     }
 
 }

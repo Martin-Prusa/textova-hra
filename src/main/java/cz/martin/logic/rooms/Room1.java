@@ -2,7 +2,7 @@ package cz.martin.logic.rooms;
 
 public class Room1 extends Room{
     public Room1() {
-        super("Room1", "Text1", "Button1-1", "Button1-2", "Button1-3");
+        super("Room1", "Text1", "Button1-1", "Button1-2", "Button1-3", "room1.jpg");
     }
 
     @Override

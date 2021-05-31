@@ -6,25 +6,27 @@ public class Room {
     private String buttonText1;
     private String buttonText2;
     private String buttonText3;
+    private String img;
 
-    public Room(String title, String text, String btn1Text, String btn2Text, String btn3Text) {
+    public Room(String title, String text, String btn1Text, String btn2Text, String btn3Text, String img) {
         this.text = text;
         this.name = title;
         this.buttonText1 = btn1Text;
         this.buttonText2 = btn2Text;
         this.buttonText3 = btn3Text;
+        this.img = img;
     }
 
     public Room choose1() {
-        return new Room("x", "x", "x", "x", "x");
+        return new Room("x", "x", "x", "x", "x", "x");
     }
 
     public Room choose2() {
-        return new Room("a", "b", "c", "d", "e");
+        return new Room("a", "b", "c", "d", "e", "x");
     }
 
     public Room choose3() {
-        return new Room("a", "b", "c", "d", "e");
+        return new Room("a", "b", "c", "d", "e", "x");
     }
 
     public String getName() {
@@ -65,5 +67,13 @@ public class Room {
 
     public void setButtonText3(String buttonText3) {
         this.buttonText3 = buttonText3;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 }

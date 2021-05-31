@@ -2,7 +2,7 @@ package cz.martin.logic.rooms;
 
 public class EndRoom extends Room{
     public EndRoom() {
-        super("Konec hry", "Zemrel jsi", "Hrat znovu", "", "");
+        super("Konec hry", "Zemrel jsi", "Hrat znovu", "", "", "random.jpg");
     }
 
     @Override

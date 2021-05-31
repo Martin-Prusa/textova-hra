@@ -2,7 +2,7 @@ package cz.martin.logic.rooms;
 
 public class WinRoom extends Room{
     public WinRoom() {
-        super("Konec hry", "Vyhral jsi", "Hrat znovu", "", "");
+        super("Konec hry", "Vyhral jsi", "Hrat znovu", "", "", "random.jpg");
     }
 
     @Override
