@@ -54,6 +54,13 @@ public class Controller {
         this.button1.setText(this.logic.getActualRoom().getButtonText1());
         this.button2.setText(this.logic.getActualRoom().getButtonText2());
         this.button3.setText(this.logic.getActualRoom().getButtonText3());
+        if(this.logic.getActualRoom().getName().equalsIgnoreCase("Konec hry")) {
+            button3.setDisable(true);
+            button2.setDisable(true);
+        } else {
+            button2.setDisable(false);
+            button3.setDisable(false);
+        }
     }
 
 }

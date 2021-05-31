@@ -7,7 +7,7 @@ public class Room6 extends Room {
 
     @Override
     public Room choose1() {
-        return new Room2();
+        return new WinRoom();
     }
 
     @Override
@@ -17,6 +17,6 @@ public class Room6 extends Room {
 
     @Override
     public Room choose3() {
-        return new Room3();
+        return new EndRoom();
     }
 }
