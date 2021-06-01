@@ -60,7 +60,7 @@ public class Controller {
         this.button1.setText(this.logic.getActualRoom().getButtonText1());
         this.button2.setText(this.logic.getActualRoom().getButtonText2());
         this.button3.setText(this.logic.getActualRoom().getButtonText3());
-        if(this.logic.getActualRoom().getName().equalsIgnoreCase("Konec hry")) {
+        if(this.logic.getActualRoom().getName().equalsIgnoreCase("Konec hry") || this.logic.getActualRoom().getName().equalsIgnoreCase("Vyhral jsi")) {
             button3.setDisable(true);
             button2.setDisable(true);
         } else {
@@ -68,7 +68,7 @@ public class Controller {
             button3.setDisable(false);
         }
 
-        Image image = new Image(this.logic.getActualRoom().getImg());
+        Image image = new Image(getClass().getResource("/img/"+this.logic.getActualRoom().getImg()).toString());
         img.setImage(image);
     }
 
