@@ -13,7 +13,6 @@ public class Logic {
 
     public Logic() {
         this.data = new Data();
-        this.rooms = new ArrayList<>();
         this.rooms = data.readRooms();
 
         for (Room room : rooms) {
@@ -29,7 +28,7 @@ public class Logic {
 //        rooms.add(new Room("Room4", "Text4", "Button4-1", "Button4-2", "Button4-3", "room4.jpg"));
 //        rooms.add(new Room("Room5", "Text5", "Button5-1", "Button5-2", "Button5-3", "room5.jpg"));
 //        rooms.add(new Room("Room6", "Text6", "Button6-1", "Button6-2", "Button6-3", "room6.jpg"));
-//        rooms.add(new Room("Konec hry", "Vyhral jsi", "Hrat znovu", "", "", "random.jpg"));
+//        rooms.add(new Room("Vyhral jsi", "Vyhral jsi", "Hrat znovu", "", "", "random.jpg"));
 //        rooms.add(new Room("Konec hry", "Zemrel jsi", "Hrat znovu", "", "", "random.jpg"));
 //        rooms.get(0).setRooms(rooms.get(1), rooms.get(2), rooms.get(3));
 //        rooms.get(1).setRooms(rooms.get(4), rooms.get(5), rooms.get(0));
@@ -52,6 +51,6 @@ public class Logic {
     }
 
     public void save() {
-        this.data.saveRooms(this.rooms);
+        //this.data.saveRooms(this.rooms);
     }
 }
