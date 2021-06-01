@@ -54,6 +54,7 @@ public class Controller {
     }
 
     public void redraw() {
+        this.logic.save();
         this.title.setText(this.logic.getActualRoom().getName());
         this.text.setText(this.logic.getActualRoom().getText());
         this.button1.setText(this.logic.getActualRoom().getButtonText1());

@@ -1,6 +1,7 @@
 package cz.martin.logic;
 
 
+import cz.martin.data.Data;
 import cz.martin.logic.rooms.Room;
 
 import java.util.ArrayList;
@@ -8,8 +9,10 @@ import java.util.ArrayList;
 public class Logic {
     private Room actualRoom;
     private ArrayList<Room> rooms;
+    private Data data;
 
     public Logic() {
+        this.data = new Data();
         this.rooms = new ArrayList<>();
         rooms.add(new Room("Room1", "Text1", "Button1-1", "Button1-2", "Button1-3", "room1.jpg"));
         rooms.add(new Room("Room2", "Text2", "Button2-1", "Button2-2", "Button2-3", "room2.jpg"));
@@ -38,5 +41,9 @@ public class Logic {
 
     public void setActualRoom(Room actualRoom) {
         this.actualRoom = actualRoom;
+    }
+
+    public void save() {
+        this.data.saveRoom(actualRoom, false);
     }
 }
