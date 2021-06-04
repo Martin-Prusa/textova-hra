@@ -1,7 +1,7 @@
 package cz.martin.data;
 
 import com.google.gson.Gson;
-import cz.martin.logic.rooms.Room;
+import cz.martin.logic.Room;
 
 import java.io.*;
 import java.util.ArrayList;

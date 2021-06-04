@@ -1,4 +1,4 @@
-package cz.martin.logic.rooms;
+package cz.martin.logic;
 
 public class Room {
     private String name;
@@ -10,6 +10,8 @@ public class Room {
     private Room r1;
     private Room r2;
     private Room r3;
+    private InventoryItem item;
+    private String requiredItemId;
 
     public Room(String title, String text, String btn1Text, String btn2Text, String btn3Text, String img) {
         this.text = text;
@@ -18,6 +20,8 @@ public class Room {
         this.buttonText2 = btn2Text;
         this.buttonText3 = btn3Text;
         this.img = img;
+        this.item = null;
+        this.requiredItemId = null;
     }
 
     public void setRooms(Room r1, Room r2, Room r3) {
@@ -96,5 +100,21 @@ public class Room {
 
     public void setR3(Room r3) {
         this.r3 = r3;
+    }
+
+    public InventoryItem getItem() {
+        return item;
+    }
+
+    public void setItem(InventoryItem item) {
+        this.item = item;
+    }
+
+    public String getRequiredItemId() {
+        return requiredItemId;
+    }
+
+    public void setRequiredItemId(String requiredItemId) {
+        this.requiredItemId = requiredItemId;
     }
 }
