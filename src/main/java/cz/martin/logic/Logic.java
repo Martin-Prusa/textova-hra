@@ -17,7 +17,6 @@ public class Logic {
         this.rooms = new ArrayList<>();
         this.inventory = new InventoryItem[3];
 
-//        //----------------------------Data Form File-----------------------------------
 //        for (Room room : rooms) {
 //            for (Room room1 : rooms) {
 //                if(room.choose1().getName().equalsIgnoreCase(room1.getName())) room.setR1(room1);
@@ -71,7 +70,7 @@ public class Logic {
     }
 
     public void save() {
-        //this.data.saveRooms(this.rooms);
+        this.data.saveRooms(this.rooms);
     }
 
     public InventoryItem[] getInventory() {
@@ -88,5 +87,13 @@ public class Logic {
             if(inventoryItem != null && r.getRequiredItemId().equals(inventoryItem.getId())) return true;
         }
         return false;
+    }
+
+    public void removeFromInventory(String itemId) {
+        if(itemId == null) return;
+        for (int i = 0; i < this.inventory.length; i++) {
+            if(this.inventory[i] == null) continue;
+            if(this.inventory[i].getId().equals(itemId)) this.inventory[i] = null;
+        }
     }
 }

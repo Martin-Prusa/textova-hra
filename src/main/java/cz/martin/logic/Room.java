@@ -3,9 +3,7 @@ package cz.martin.logic;
 public class Room {
     private String name;
     private String text;
-    private String buttonText1;
-    private String buttonText2;
-    private String buttonText3;
+    private String[] buttonTexts;
     private String img;
     private Room r1;
     private Room r2;
@@ -16,9 +14,7 @@ public class Room {
     public Room(String title, String text, String btn1Text, String btn2Text, String btn3Text, String img) {
         this.text = text;
         this.name = title;
-        this.buttonText1 = btn1Text;
-        this.buttonText2 = btn2Text;
-        this.buttonText3 = btn3Text;
+        this.buttonTexts = new String[]{btn1Text, btn2Text, btn3Text};
         this.img = img;
         this.item = null;
         this.requiredItemId = null;
@@ -58,28 +54,12 @@ public class Room {
         this.text = text;
     }
 
-    public String getButtonText1() {
-        return buttonText1;
+    public String[] getButtonTexts() {
+        return buttonTexts;
     }
 
-    public void setButtonText1(String buttonText1) {
-        this.buttonText1 = buttonText1;
-    }
-
-    public String getButtonText2() {
-        return buttonText2;
-    }
-
-    public void setButtonText2(String buttonText2) {
-        this.buttonText2 = buttonText2;
-    }
-
-    public String getButtonText3() {
-        return buttonText3;
-    }
-
-    public void setButtonText3(String buttonText3) {
-        this.buttonText3 = buttonText3;
+    public void setButtonTexts(String[] buttonTexts) {
+        this.buttonTexts = buttonTexts;
     }
 
     public String getImg() {

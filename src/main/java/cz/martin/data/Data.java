@@ -12,7 +12,7 @@ public class Data {
         try {
             Room[] roomsArr = new Room[rooms.size()];
             for (int i = 0; i < rooms.size(); i++) {
-                roomsArr[i] = new Room(rooms.get(i).getName(), rooms.get(i).getText(), rooms.get(i).getButtonText1(), rooms.get(i).getButtonText2(), rooms.get(i).getButtonText3(), rooms.get(i).getImg());
+                roomsArr[i] = new Room(rooms.get(i).getName(), rooms.get(i).getText(), rooms.get(i).getButtonTexts()[0], rooms.get(i).getButtonTexts()[1], rooms.get(i).getButtonTexts()[2], rooms.get(i).getImg());
                 roomsArr[i].setRooms(new Room(rooms.get(i).choose1().getName(), null, null, null, null, null), new Room(rooms.get(i).choose2().getName(), null, null, null, null, null), new Room(rooms.get(i).choose3().getName(), null, null, null, null, null));
             }
             Gson gson = new Gson();
@@ -31,9 +31,7 @@ public class Data {
             ArrayList<Room> roomsList = new ArrayList<>(Arrays.asList(rooms));
             br.close();
             return roomsList;
-        } catch (IOException ignored) {
-            System.out.println(ignored);
-        }
+        } catch (IOException ignored) {}
         return new ArrayList<>();
     }
 }

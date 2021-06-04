@@ -43,34 +43,22 @@ public class Controller {
     private Button inventory3;
 
     @FXML
-    public void inventory1Click(ActionEvent event) {
-
-    }
-
-    @FXML
-    public void inventory2Click(ActionEvent event) {
-
-    }
-
-    @FXML
-    public void inventory3Click(ActionEvent event) {
-
-    }
-
-    @FXML
     public void btn1click(ActionEvent event) {
+        this.logic.removeFromInventory(this.logic.getActualRoom().choose1().getRequiredItemId());
         this.logic.setActualRoom(this.logic.getActualRoom().choose1());
         redraw();
     }
 
     @FXML
     public void btn2click(ActionEvent event) {
+        this.logic.removeFromInventory(this.logic.getActualRoom().choose2().getRequiredItemId());
         this.logic.setActualRoom(this.logic.getActualRoom().choose2());
         redraw();
     }
 
     @FXML
     public void btn3click(ActionEvent event) {
+        this.logic.removeFromInventory(this.logic.getActualRoom().choose3().getRequiredItemId());
         this.logic.setActualRoom(this.logic.getActualRoom().choose3());
         redraw();
     }
@@ -89,9 +77,12 @@ public class Controller {
         this.logic.save();
         this.title.setText(this.logic.getActualRoom().getName());
         this.text.setText(this.logic.getActualRoom().getText());
-        this.button1.setText(this.logic.getActualRoom().getButtonText1());
-        this.button2.setText(this.logic.getActualRoom().getButtonText2());
-        this.button3.setText(this.logic.getActualRoom().getButtonText3());
+        String required1 = this.logic.getActualRoom().choose1().getRequiredItemId() == null ? "" : " ("+this.logic.getActualRoom().choose1().getRequiredItemId()+")";
+        String required2 = this.logic.getActualRoom().choose2().getRequiredItemId() == null ? "" : " ("+this.logic.getActualRoom().choose2().getRequiredItemId()+")";
+        String required3 = this.logic.getActualRoom().choose3().getRequiredItemId() == null ? "" : " ("+this.logic.getActualRoom().choose3().getRequiredItemId()+")";
+        this.button1.setText(this.logic.getActualRoom().getButtonTexts()[0]+required1);
+        this.button2.setText(this.logic.getActualRoom().getButtonTexts()[1]+required2);
+        this.button3.setText(this.logic.getActualRoom().getButtonTexts()[2]+required3);
         if(this.logic.getActualRoom().getName().equalsIgnoreCase("Konec hry") || this.logic.getActualRoom().getName().equalsIgnoreCase("Vyhral jsi")) {
             button3.setDisable(true);
             button2.setDisable(true);
