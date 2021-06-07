@@ -99,9 +99,9 @@ public class Controller {
             else this.inventory.get(i).setText("");
         }
 
-        this.button1.setDisable(!logic.canEnterRoom(this.logic.getActualRoom().choose1()));
-        this.button2.setDisable(!logic.canEnterRoom(this.logic.getActualRoom().choose2()));
-        this.button3.setDisable(!logic.canEnterRoom(this.logic.getActualRoom().choose3()));
+        if(!this.logic.canEnterRoom(this.logic.getActualRoom().choose1())) this.button1.setDisable(true);
+        if(!this.logic.canEnterRoom(this.logic.getActualRoom().choose2())) this.button2.setDisable(true);
+        if(!this.logic.canEnterRoom(this.logic.getActualRoom().choose3())) this.button3.setDisable(true);
 
     }
 

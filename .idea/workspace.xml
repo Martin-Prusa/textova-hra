@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77e55fa1-c011-41bb-b396-f6176ce50807" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cz/martin/data/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cz/martin/data/Data.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cz/martin/gui/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cz/martin/gui/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cz/martin/logic/Logic.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cz/martin/logic/Logic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cz/martin/logic/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cz/martin/logic/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/martin/data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/martin/data/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/martin/gui/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/martin/gui/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/martin/logic/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/martin/logic/Logic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/martin/logic/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/martin/logic/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/main.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="77e55fa1-c011-41bb-b396-f6176ce50807" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,17 +59,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -104,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622804041636</updated>
-      <workItem from="1622804044582" duration="4751000" />
+      <workItem from="1622804044582" duration="4943000" />
     </task>
     <servers />
   </component>
