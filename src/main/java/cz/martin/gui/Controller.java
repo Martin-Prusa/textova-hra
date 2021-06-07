@@ -1,6 +1,5 @@
 package cz.martin.gui;
 
-import cz.martin.logic.InventoryItem;
 import cz.martin.logic.Logic;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -86,7 +85,7 @@ public class Controller {
         if(this.logic.getActualRoom().getName().equalsIgnoreCase("Konec hry") || this.logic.getActualRoom().getName().equalsIgnoreCase("Vyhral jsi")) {
             button3.setDisable(true);
             button2.setDisable(true);
-            this.logic.setInventory(new InventoryItem[3]);
+            this.logic.setInventory(new String[3]);
         } else {
             button2.setDisable(false);
             button3.setDisable(false);
@@ -95,7 +94,7 @@ public class Controller {
         Image image = new Image(getClass().getResource("/img/"+this.logic.getActualRoom().getImg()).toString());
         img.setImage(image);
         for (int i = 0; i < this.logic.getInventory().length; i++) {
-            if(this.logic.getInventory()[i] != null) this.inventory.get(i).setText(this.logic.getInventory()[i].getName());
+            if(this.logic.getInventory()[i] != null) this.inventory.get(i).setText(this.logic.getInventory()[i]);
             else this.inventory.get(i).setText("");
         }
 

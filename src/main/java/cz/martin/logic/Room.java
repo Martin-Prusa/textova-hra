@@ -8,7 +8,7 @@ public class Room {
     private Room r1;
     private Room r2;
     private Room r3;
-    private InventoryItem item;
+    private String item;
     private String requiredItemId;
 
     public Room(String title, String text, String btn1Text, String btn2Text, String btn3Text, String img) {
@@ -82,11 +82,11 @@ public class Room {
         this.r3 = r3;
     }
 
-    public InventoryItem getItem() {
+    public String getItem() {
         return item;
     }
 
-    public void setItem(InventoryItem item) {
+    public void setItem(String item) {
         this.item = item;
     }
 

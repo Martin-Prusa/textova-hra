@@ -14,6 +14,8 @@ public class Data {
             for (int i = 0; i < rooms.size(); i++) {
                 roomsArr[i] = new Room(rooms.get(i).getName(), rooms.get(i).getText(), rooms.get(i).getButtonTexts()[0], rooms.get(i).getButtonTexts()[1], rooms.get(i).getButtonTexts()[2], rooms.get(i).getImg());
                 roomsArr[i].setRooms(new Room(rooms.get(i).choose1().getName(), null, null, null, null, null), new Room(rooms.get(i).choose2().getName(), null, null, null, null, null), new Room(rooms.get(i).choose3().getName(), null, null, null, null, null));
+                roomsArr[i].setItem(rooms.get(i).getItem());
+                roomsArr[i].setRequiredItemId(rooms.get(i).getRequiredItemId());
             }
             Gson gson = new Gson();
             String json = gson.toJson(roomsArr);
