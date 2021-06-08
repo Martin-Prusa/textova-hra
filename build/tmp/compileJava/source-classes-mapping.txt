@@ -4,9 +4,9 @@ cz/martin/gui/Window.java
  cz.martin.gui.Window
 cz/martin/Main.java
  cz.martin.Main
+cz/martin/logic/Logic.java
+ cz.martin.logic.Logic
 cz/martin/data/Data.java
  cz.martin.data.Data
 cz/martin/gui/Controller.java
  cz.martin.gui.Controller
-cz/martin/logic/Logic.java
- cz.martin.logic.Logic

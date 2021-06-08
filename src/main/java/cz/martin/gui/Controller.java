@@ -87,6 +87,7 @@ public class Controller {
             button2.setDisable(true);
             this.logic.setInventory(new String[3]);
         } else {
+            button1.setDisable(false);
             button2.setDisable(false);
             button3.setDisable(false);
         }
